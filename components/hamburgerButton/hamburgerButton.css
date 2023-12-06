@@ -1,0 +1,11 @@
+.cv-hamburger-button{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+  .cv-hamburger-button{
+    display: flex;
+    width: 60px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,17 @@
+.cv-second-decoration{
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    background-color: green;
+}
+.cv-second-decoration h1{
+    font-family: var(--cv-primary-font);
+    color: var(--cv-black-color);
+    font-size: 420%;
+}
+
+.cv-second-decoration h2{
+    font-family: var(--cv-secondary-font);
+    color: var(--cv-red-color);
+    font-size: 280%;
+}

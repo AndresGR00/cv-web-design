@@ -1,0 +1,49 @@
+.cv-first-decoration-container{
+    width: 35%;
+    height: 65%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    background-color: aqua;
+}
+
+.cv-main-japanese-title svg{
+    width: 11.5%;
+    fill: var(--cv-black-color);
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+}
+.cv-main-red-circle{
+    width: 70%;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+}
+
+.cv-main-black-letter{
+    width: 45%;
+    fill: var(--cv-black-color);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 2;
+}
+
+.cv-main-black-circle{
+    width: 70%;
+    position: absolute;
+    fill: var(--cv-black-color);
+    top: 10%;
+    left: 10%;
+}
+
+@media screen and (max-width: 800px){
+    .cv-first-decoration-container{
+        width: 35%;
+        height: 65%;
+        top: 20%;
+        left: 5%;
+        background-color: green;
+    }
+}

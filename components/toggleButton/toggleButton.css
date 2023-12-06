@@ -1,0 +1,20 @@
+.cv-toggle-container {
+  width: 60px;
+  height: 30px;
+  background-color: var(--cv-red-color);
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cv-toggle-circle {
+  width: 25px;
+  height: 25px;
+  background-color: var(--cv-black-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 9%;
+  left: 7%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}

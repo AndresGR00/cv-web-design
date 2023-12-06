@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Japanese 3017';
+  src: url('https://res.cloudinary.com/dbinlquvz/raw/upload/v1701901767/4_CV_Web_Design/Japanese_3017_clcdjg.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --cv-red-color: #ba172e;
+
+  --cv-black-color: #141414;
+  --cv-second-black-color: #121212;
+
+  --cv-white-color: #fcf7e8;
+  --cv-second-white-color: #fcf8eb;
+
+  --cv-primary-font: 'Japanese 3017', Helvetica, Arial, sans-serif;
+  --cv-secondary-font: Arial, sans-serif;
+}
+
+/* Reset Styles */
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* End Reset Styles */
+
+body{
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+#app{
+  display: flex;
+  width: 100%;
+  height: 100%;  
+}
+
+@media screen and (max-width: 800px){
+  #app{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+.cv-header-menu-buttons-img{
+    width: 60px;
+    height: 60px;
+    background-color: var(--cv-white-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv-header-menu-buttons-img svg{
+    fill: var(--cv-black-color);
+    height: 40px;
+}

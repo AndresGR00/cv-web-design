@@ -1,0 +1,12 @@
+.cv-header-menu-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 800px){
+  .cv-header-menu-buttons{
+    display: none;
+  }
+}
