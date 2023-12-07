@@ -1,0 +1,30 @@
+.cv-wolf-container {
+  position: absolute;
+  height: 100%;
+  width: 55%;
+  right: 0;
+  /* background-color: orange !important; */
+}
+
+.cv-wolf-container.original {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1701910265/4_CV_Web_Design/lobo-negro_rgwh16.png);
+  background-size: cover;
+  background-position: left;
+}
+
+.cv-wolf-container.changed {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1701910265/4_CV_Web_Design/lobo-blanco_o4zkpg.png);
+  background-size: cover;
+  background-position: left;
+}
+
+@media screen and (max-width: 800px) {
+  .cv-wolf-container.original {
+    background-size: cover;
+    
+  }
+  .cv-wolf-container.changed {
+    background-size: cover;
+    
+  }
+}

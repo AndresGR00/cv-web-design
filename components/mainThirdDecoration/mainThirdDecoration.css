@@ -1,0 +1,17 @@
+.cv-third-decoration-container{
+    position: absolute;
+    /* background-color: yellow; */
+    height: 100px;
+    width: 100px;
+    top: 55%;
+    left: 35%;
+    fill: var(--cv-black-color);
+}
+
+@media screen and (max-width: 800px){
+    .cv-third-decoration-container{
+        top: 60%;
+        left: 30%;
+    }
+}
+

@@ -1,17 +1,17 @@
 .cv-first-decoration-container{
-    width: 35%;
+    width: 30%;
     height: 65%;
     position: absolute;
     top: 5%;
-    left: 15%;
-    background-color: aqua;
+    left: 12.5%;
+    /* background-color: aqua; */
 }
 
 .cv-main-japanese-title svg{
-    width: 11.5%;
+    width: 12%;
     fill: var(--cv-black-color);
     position: absolute;
-    top: 15%;
+    top: 20%;
     z-index: 2;
 }
 .cv-main-red-circle{
@@ -44,6 +44,5 @@
         height: 65%;
         top: 20%;
         left: 5%;
-        background-color: green;
     }
 }

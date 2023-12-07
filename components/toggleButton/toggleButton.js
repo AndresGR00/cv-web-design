@@ -19,6 +19,7 @@ export const ToggleButton = () => {
 const isToggledButton = () => {
   const toggleCircle = document.querySelector(".cv-toggle-circle");
   const elementsToChangeColor = document.querySelectorAll(".change-color");
+  const wolfContainer = document.querySelector(".cv-wolf-container");
 
   isToggled = !isToggled;
 
@@ -32,6 +33,7 @@ const isToggledButton = () => {
         computedStyles.getPropertyValue("background-color");
       const color = computedStyles.getPropertyValue("color");
       const fill = computedStyles.getPropertyValue("fill");
+      const background = computedStyles.getPropertyValue("background");
 
       // Resetear estilos a los valores originales
       element.style.backgroundColor = "";
@@ -57,6 +59,8 @@ const isToggledButton = () => {
       if (fill === "rgb(20, 20, 20)") {
         element.style.fill = "var(--cv-second-white-color)";
       }
+      wolfContainer.classList.remove("original");
+      wolfContainer.classList.add("changed");
     });
   } else {
     toggleCircle.style.backgroundColor = "#141414"; // Negro
@@ -64,7 +68,8 @@ const isToggledButton = () => {
 
     elementsToChangeColor.forEach((element) => {
       const computedStyles = window.getComputedStyle(element);
-      const backgroundColor = computedStyles.getPropertyValue("background-color");
+      const backgroundColor =
+        computedStyles.getPropertyValue("background-color");
       const color = computedStyles.getPropertyValue("color");
       const fill = computedStyles.getPropertyValue("fill");
 
@@ -92,8 +97,8 @@ const isToggledButton = () => {
       if (fill === "rgb(252, 247, 233)") {
         element.style.fill = "var(--cv-black-color)";
       }
+      wolfContainer.classList.remove("changed");
+      wolfContainer.classList.add("original");
     });
   }
 };
-
-  
