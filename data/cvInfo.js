@@ -93,12 +93,74 @@ const data = {
     {
       name: "Master in UI/UX Design",
       place: "kSchool",
-      years: "2021",
+      years: "2022",
     },
     {
       name: "Full Stack Developer",
       place: "Rock{theCode}",
       years: "Current",
+    },
+  ],
+  experiences: [
+    {
+      name: "Graphic Designer",
+      place: "Tecnoseñal",
+      years: "feb.2021 - apr.2021",
+    },
+    {
+      name: "Digital Marketing Designer",
+      place: "Bombo Comunicación",
+      years: "feb.2022 - agt.2022",
+    },
+    {
+      name: "Marketing and Press",
+      place: "Beta Comunicación",
+      years: "nov.2022 - jan.2023",
+    },
+    {
+      name: "Graphic Designer",
+      place: "Freelance",
+      years: "2021-current",
+    },
+  ],
+  certifications: [
+    {
+      name: "ISE I",
+      place: "Trinity London College",
+      years: "feb.2014",
+    },
+    {
+      name: "Art Direction",
+      place: "Domestika",
+      years: "2022",
+    },
+    {
+      name: "Digital Marketing",
+      place: "ThePowerMBA",
+      years: "2023",
+    },
+    {
+      name: "Design to communicate",
+      place: "Domestika",
+      years: "2023",
+    },
+  ],
+  contacts: [
+    {
+      name: "Phone",
+      place: "+34 XXX XXX XXX",
+    },
+    {
+      name: "E-mail",
+      place: "xxxxxxxx@gmail.com",
+    },
+    {
+      name: "LinkedIn",
+      place: "(link_profile_url)",
+    },
+    {
+      name: "GitHub",
+      place: "(link_profile_url)",
     },
   ],
 };

@@ -9,7 +9,7 @@ import { SecondDecoration } from './components/mainSecondDecoration/mainSecondDe
 import { ThirdDecoration } from './components/mainThirdDecoration/mainThirdDecoration';
 import { Wolf } from './components/mainWolf/mainWolf';
 import { ToggleButton } from './components/toggleButton/toggleButton';
-import { studiesFunction } from './data/headerButtonsFunctions';
+import { certificationsFunction, contactsFunction, experienceFunction, studiesFunction } from './data/headerButtonsFunctions';
 import { certificationsSvg, contactSvg, experienceSvg, studiesSvg } from './data/infoSVGs';
 import './style.css';
 
@@ -19,9 +19,9 @@ const printHeader = () => {
   Logo('#', renderMainLogo)
   HeaderButtonsContainer();
   HeaderButton(`${studiesSvg}`, '#', studiesFunction);
-  HeaderButton(`${experienceSvg}`, '#');
-  HeaderButton(`${certificationsSvg}`, '#');
-  HeaderButton(`${contactSvg}`, '#');
+  HeaderButton(`${experienceSvg}`, '#', experienceFunction);
+  HeaderButton(`${certificationsSvg}`, '#', certificationsFunction);
+  HeaderButton(`${contactSvg}`, '#', contactsFunction);
   ToggleButton();
   HamburgerButton();
 }

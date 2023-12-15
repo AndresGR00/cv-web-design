@@ -33,6 +33,7 @@ export const isToggledButton = () => {
     toggleCircle.style.transform = "translateX(27px)";
 
     elementsToChangeColor.forEach((element) => {
+      
       const computedStyles = window.getComputedStyle(element);
       const backgroundColor =
         computedStyles.getPropertyValue("background-color");

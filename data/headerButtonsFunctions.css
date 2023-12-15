@@ -46,6 +46,7 @@
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.5em;
+    text-align: center;
 }
 .cv-study-place, .cv-study-year{
     color: var(--cv-black-color);
@@ -53,6 +54,7 @@
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.3em;
+    text-align: center;
 }
 
 @media screen and (max-width: 1419px){
