@@ -1,8 +1,15 @@
 .cv-main{
-    background-color: var(--cv-white-color);
+    /* background-color: var(--cv-white-color); */
     width: calc(100% - 95px);
     height: 100svh;
     position: relative;
+}
+
+.cv-main.original {
+    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1702637276/4_CV_Web_Design/Dise%C3%B1o_Imagenes_de_Fondo_Mesa_de_trabajo_1_ubrtsz.png);
+}
+.cv-main.changed {
+    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1702637276/4_CV_Web_Design/Dise%C3%B1o_Imagenes_de_Fondo-02_cqs156.png);
 }
 
 @media screen and (max-width: 800px){

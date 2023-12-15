@@ -1,0 +1,124 @@
+
+.cv-section-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-title-container{
+    font-family: var(--cv-primary-font);
+}
+
+.cv-title-container h2{
+    font-size: 4em;
+    color: var(--cv-black-color);
+}
+
+.cv-info-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-study-card{
+    background-color: var(--cv-brown-color);
+    width: 500px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cv-study-name{
+    color: var(--cv-red-color);
+    font-family: var(--cv-secondary-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.cv-study-place, .cv-study-year{
+    color: var(--cv-black-color);
+    font-family: var(--cv-secondary-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 1419px){
+    .cv-study-card{
+        width: 450px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 1294px){
+    .cv-study-card{
+        width: 400px;
+        height: 200px;
+    }
+    .cv-study-name{
+        font-size: 1.2em;
+    }
+    .cv-study-place, .cv-study-year{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 1170px){
+    .cv-study-card{
+        width: 350px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 1045px){
+    .cv-study-card{
+        width: 300px;
+        height: 150px;
+    }
+    .cv-study-name{
+        font-size: 1em;
+    }
+    .cv-study-place, .cv-study-year{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 919px){
+    .cv-study-card{
+        width: 252px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 800px){
+    .cv-title-container h2{
+        font-size: 2.5em;
+        color: var(--cv-black-color);
+    }
+    .cv-section-container{
+        gap: 20px;
+    }
+    .cv-info-container{
+        gap: 20px;
+    }
+    .cv-study-card{
+        width: 100%;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 485px){
+    .cv-title-container h2{
+        font-size: 2em;
+        color: var(--cv-black-color);
+    }
+}
+
+

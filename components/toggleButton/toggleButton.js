@@ -2,6 +2,10 @@ import "./toggleButton.css";
 
 let isToggled = false;
 
+export const setIsToggled = (value) => {
+  isToggled = value;
+};
+
 export const ToggleButton = () => {
   const toggleContainer = document.createElement("div");
   toggleContainer.className = "cv-toggle-container";
@@ -16,10 +20,11 @@ export const ToggleButton = () => {
   toggleContainer.addEventListener("click", isToggledButton);
 };
 
-const isToggledButton = () => {
+export const isToggledButton = () => {
   const toggleCircle = document.querySelector(".cv-toggle-circle");
   const elementsToChangeColor = document.querySelectorAll(".change-color");
   const wolfContainer = document.querySelector(".cv-wolf-container");
+  const main = document.querySelector('.cv-main');
 
   isToggled = !isToggled;
 
@@ -59,8 +64,18 @@ const isToggledButton = () => {
       if (fill === "rgb(20, 20, 20)") {
         element.style.fill = "var(--cv-second-white-color)";
       }
-      wolfContainer.classList.remove("original");
-      wolfContainer.classList.add("changed");
+      if (wolfContainer) {
+        wolfContainer.classList.remove("original");
+        wolfContainer.classList.add("changed");
+      }
+      
+      if (main) {
+        main.classList.remove("original");
+        main.classList.add("changed");
+      }
+      if (backgroundColor === "rgb(229, 215, 181)"){
+        element.style.backgroundColor = 'var(--cv-grey-color)';
+      }
     });
   } else {
     toggleCircle.style.backgroundColor = "#141414"; // Negro
@@ -97,8 +112,18 @@ const isToggledButton = () => {
       if (fill === "rgb(252, 247, 233)") {
         element.style.fill = "var(--cv-black-color)";
       }
-      wolfContainer.classList.remove("changed");
-      wolfContainer.classList.add("original");
+      if (wolfContainer) {
+        wolfContainer.classList.remove("changed");
+        wolfContainer.classList.add("original");
+      }
+      
+      if (main) {
+        main.classList.remove("changed");
+        main.classList.add("original");
+      }
+      if (backgroundColor === "rgb(84, 84, 84)"){
+        element.style.backgroundColor = 'var(--cv-brown-color)';
+      }
     });
   }
 };

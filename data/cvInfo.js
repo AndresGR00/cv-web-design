@@ -77,8 +77,30 @@
   ],
 }; */
 const data = {
-    name: 'Andres G.',
-    description: 'Fullstack Developer' 
-}
+  name: "Andres G.",
+  description: "Fullstack Developer",
+  studies: [
+    {
+      name: "Degree in Graphic Design",
+      place: "EASD Pedro Almodóvar",
+      years: "2017-2021",
+    },
+    {
+      name: "Master in Digital MKT",
+      place: "ThePowerBusinessSchool",
+      years: "2021",
+    },
+    {
+      name: "Master in UI/UX Design",
+      place: "kSchool",
+      years: "2021",
+    },
+    {
+      name: "Full Stack Developer",
+      place: "Rock{theCode}",
+      years: "Current",
+    },
+  ],
+};
 
-export default data
+export default data;

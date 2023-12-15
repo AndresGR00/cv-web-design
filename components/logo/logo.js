@@ -1,9 +1,26 @@
 import { svgLogo } from "../../data/infoSVGs";
+import { FirstDecoration } from "../mainFirstDecoration/mainFirstDecoration";
+import { SecondDecoration } from "../mainSecondDecoration/mainSecondDecoration";
+import { ThirdDecoration } from "../mainThirdDecoration/mainThirdDecoration";
+import { Wolf } from "../mainWolf/mainWolf";
+import { isToggledButton, setIsToggled } from "../toggleButton/toggleButton";
 import "./logo.css";
 
+export const renderMainLogo = () => {
+  const main = document.querySelector('.cv-main');
+  main.innerHTML = '';
+  main.style.height = '100svh';
 
+  setIsToggled(!false);
+  isToggledButton();
 
-export const Logo = (link) => {
+  FirstDecoration();
+  SecondDecoration();
+  ThirdDecoration();
+  Wolf();
+}
+
+export const Logo = (link, mission) => {
   const containerLogoA = document.createElement("a");
   containerLogoA.className = "cv-logo-container";
   containerLogoA.href = link;
@@ -25,4 +42,6 @@ export const Logo = (link) => {
   externalCircle.appendChild(middleCircle);
   middleCircle.appendChild(internalCircle);
   internalCircle.appendChild(logoImage);
+
+  containerLogoA.addEventListener('click', mission)
 };
