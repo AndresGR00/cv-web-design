@@ -1,25 +1,89 @@
 .cv-second-decoration {
   position: absolute;
-  top: 75%;
-  left: 12.5%;
-  /* background-color: purple; */
+  top: 80%;
+  left: 2.5%;
+  z-index: 4;
 }
 .cv-second-decoration h1 {
   font-family: var(--cv-primary-font);
   color: var(--cv-black-color);
-  font-size: 480%;
+  font-size: 5.5em;
 }
 
 .cv-second-decoration h2 {
   font-family: var(--cv-secondary-font);
   color: var(--cv-red-color);
-  font-size: 280%;
+  font-size: 4em;
   margin-top: -5%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .cv-second-decoration h1 {
+    font-size: 7em;
+  }
+
+  .cv-second-decoration h2 {
+    font-size: 5em;
+    margin-top: -5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cv-second-decoration {
+    bottom: 2.5%;
+    left: 2.5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cv-second-decoration h1 {
+    font-size: 5em;
+  }
+
+  .cv-second-decoration h2 {
+    font-size: 3.5em;
+    margin-top: -5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cv-second-decoration {
+    top: 84%;
+  }
+  .cv-second-decoration h1 {
+    font-size: 4.5em;
+  }
+
+  .cv-second-decoration h2 {
+    font-size: 3em;
+    margin-top: -5%;
+  }
+}
+@media screen and (max-width: 500px) {
   .cv-second-decoration {
     top: 85%;
-    left: 5%;
+  }
+
+  .cv-second-decoration h1 {
+    font-size: 4em;
+  }
+
+  .cv-second-decoration h2 {
+    font-size: 2.5em;
+    margin-top: -5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cv-second-decoration {
+    top: 89%;
+  }
+
+  .cv-second-decoration h1 {
+    font-size: 2.6em;
+  }
+
+  .cv-second-decoration h2 {
+    font-size: 1.8em;
+    margin-top: -3%;
   }
 }

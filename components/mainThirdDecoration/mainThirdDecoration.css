@@ -1,17 +1,64 @@
-.cv-third-decoration-container{
-    position: absolute;
-    /* background-color: yellow; */
-    height: 100px;
-    width: 100px;
-    top: 55%;
-    left: 35%;
-    fill: var(--cv-black-color);
+.cv-third-decoration-container {
+  position: absolute;
+  height: 33%;
+  width: 17%;
+  top: 45%;
+  left: 25%;
+  fill: var(--cv-black-color);
+  z-index: 3;
 }
 
-@media screen and (max-width: 800px){
-    .cv-third-decoration-container{
-        top: 60%;
-        left: 30%;
-    }
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .cv-third-decoration-container {
+    height: 33%;
+    width: 19%;
+    top: 45%;
+    left: 24.5%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1439px) {
+  .cv-third-decoration-container {
+    height: 31%;
+    width: 20%;
+    top: 48%;
+    left: 25%;
+  }
 }
 
+@media screen and (min-width: 801px) and (max-width: 999px) {
+  .cv-third-decoration-container {
+    height: 31%;
+    width: 23%;
+    top: 42%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cv-third-decoration-container {
+    top: 40%;
+    left: 20%;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cv-third-decoration-container {
+    top: 40%;
+    left: 12%;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cv-third-decoration-container {
+    top: 43%;
+    left: 9%;
+    width: 39%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cv-third-decoration-container {
+    top: 43%;
+    left: 9%;
+    width: 39%;
+  }
+}

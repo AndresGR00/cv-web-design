@@ -3,8 +3,7 @@
     height: 65%;
     position: absolute;
     top: 5%;
-    left: 12.5%;
-    /* background-color: aqua; */
+    left: 2.5%;
 }
 
 .cv-main-japanese-title svg{
@@ -38,11 +37,57 @@
     left: 10%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
     .cv-first-decoration-container{
         width: 35%;
         height: 65%;
-        top: 20%;
-        left: 5%;
+        top: 2.5%;
+        left: 2.5%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1439px) {
+    .cv-first-decoration-container{
+        width: 40%;
+        height: 65%;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 999px) {
+    .cv-first-decoration-container{
+        width: 40%;
+        height: 65%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .cv-first-decoration-container{
+        width: 40%;
+        height: 65%;
+        top: 2.5%;
+        left: 2.5%;
+    }
+}
+@media screen and (max-width: 700px){
+    .cv-first-decoration-container{
+        width: 45%;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 600px){
+    .cv-first-decoration-container{
+        width: 50%;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 500px){
+    .cv-first-decoration-container{
+        width: 55%;
+        height: 85%;
+    }
+}
+@media screen and (max-width: 400px){
+    .cv-first-decoration-container{
+        width: 70%;
+        height: 80%;
     }
 }

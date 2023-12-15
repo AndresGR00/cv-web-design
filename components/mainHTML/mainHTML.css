@@ -1,11 +1,13 @@
 .cv-main{
     background-color: var(--cv-white-color);
-    width: 90%;
+    width: calc(100% - 95px);
     height: 100svh;
+    position: relative;
 }
 
 @media screen and (max-width: 800px){
     .cv-main{
         width: 100%;
+        height: calc(100vh - 80px);
     }
 }
