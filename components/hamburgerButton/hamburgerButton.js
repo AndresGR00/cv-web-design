@@ -1,15 +1,16 @@
 import { certificationsFunction, contactsFunction, experienceFunction, studiesFunction } from "../../data/headerButtonsFunctions";
+import { getIsToggled } from "../toggleButton/toggleButton";
 import "./hamburgerButton.css";
 
 const switchMenu = () => {
   const main = document.querySelector('.cv-main');
   main.innerHTML = '';
   main.innerHTML = `
-  <div class="cv-hamburger-menu change-color">
-    <a class="cv-menu-item change-color" id="link-qualifications">Qualifications</a>
-    <a class="cv-menu-item change-color" id="link-experience">Experience</a>
-    <a class="cv-menu-item change-color" id="link-certifications">Certifications</a>
-    <a class="cv-menu-item change-color" id="link-contact">Contact Me</a>
+  <div class="${getIsToggled() ? "changed" : "original"} cv-hamburger-menu need-to-change">
+    <a class="${getIsToggled() ? "changed" : "original"} cv-menu-item need-to-change" id="link-qualifications">Qualifications</a>
+    <a class="${getIsToggled() ? "changed" : "original"} cv-menu-item need-to-change" id="link-experience">Experience</a>
+    <a class="${getIsToggled() ? "changed" : "original"} cv-menu-item need-to-change" id="link-certifications">Certifications</a>
+    <a class="${getIsToggled() ? "changed" : "original"} cv-menu-item need-to-change" id="link-contact">Contact Me</a>
   </div>
 `;
 const linkQualifications = document.getElementById('link-qualifications');

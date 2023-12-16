@@ -14,8 +14,13 @@
 }
 
 .cv-title-container h2{
-    font-size: 4em;
+    font-size: 4em;    
+}
+.cv-title-section.original{
     color: var(--cv-black-color);
+}
+.cv-title-section.changed{
+    color: var(--cv-white-color);
 }
 
 .cv-info-container{
@@ -27,7 +32,6 @@
 }
 
 .cv-study-card{
-    background-color: var(--cv-brown-color);
     width: 500px;
     height: 250px;
     padding: 30px;
@@ -37,7 +41,12 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-
+}
+.cv-study-card.original{    
+    background-color: var(--cv-brown-color);
+}
+.cv-study-card.changed{    
+    background-color: var(--cv-grey-color);
 }
 
 .cv-study-name{
@@ -55,6 +64,12 @@
     text-transform: uppercase;
     font-size: 1.3em;
     text-align: center;
+}
+.cv-study-place.original, .cv-study-year.original{
+    color: var(--cv-black-color);
+}
+.cv-study-place.changed, .cv-study-year.changed{
+    color: var(--cv-white-color);
 }
 
 @media screen and (max-width: 1419px){

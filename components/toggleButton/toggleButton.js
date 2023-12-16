@@ -1,6 +1,7 @@
 import "./toggleButton.css";
 
 let isToggled = false;
+export const getIsToggled = () => isToggled;
 
 export const setIsToggled = (value) => {
   isToggled = value;
@@ -23,6 +24,7 @@ export const ToggleButton = () => {
 export const isToggledButton = () => {
   const toggleCircle = document.querySelector(".cv-toggle-circle");
   const elementsToChangeColor = document.querySelectorAll(".change-color");
+  const elementsNeedToChange = document.querySelectorAll('.need-to-change');
   const wolfContainer = document.querySelector(".cv-wolf-container");
   const main = document.querySelector('.cv-main');
 
@@ -36,10 +38,9 @@ export const isToggledButton = () => {
       
       const computedStyles = window.getComputedStyle(element);
       const backgroundColor =
-        computedStyles.getPropertyValue("background-color");
+      computedStyles.getPropertyValue("background-color");
       const color = computedStyles.getPropertyValue("color");
       const fill = computedStyles.getPropertyValue("fill");
-      const background = computedStyles.getPropertyValue("background");
 
       // Resetear estilos a los valores originales
       element.style.backgroundColor = "";
@@ -78,6 +79,12 @@ export const isToggledButton = () => {
         element.style.backgroundColor = 'var(--cv-grey-color)';
       }
     });
+    elementsNeedToChange.forEach((element) => {
+      if (element) {
+        element.classList.remove("original");
+        element.classList.add("changed");
+      }
+    })
   } else {
     toggleCircle.style.backgroundColor = "#141414"; // Negro
     toggleCircle.style.transform = "translateX(0px)";
@@ -85,7 +92,7 @@ export const isToggledButton = () => {
     elementsToChangeColor.forEach((element) => {
       const computedStyles = window.getComputedStyle(element);
       const backgroundColor =
-        computedStyles.getPropertyValue("background-color");
+      computedStyles.getPropertyValue("background-color");
       const color = computedStyles.getPropertyValue("color");
       const fill = computedStyles.getPropertyValue("fill");
 
@@ -126,5 +133,11 @@ export const isToggledButton = () => {
         element.style.backgroundColor = 'var(--cv-brown-color)';
       }
     });
+    elementsNeedToChange.forEach((element) => {
+      if (element) {
+        element.classList.remove("changed");
+        element.classList.add("original");
+      }
+    })
   }
 };

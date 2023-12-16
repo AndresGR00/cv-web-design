@@ -2,17 +2,8 @@
     display: none;
 }
 
-@media screen and (max-width: 800px){
-  .cv-hamburger-button{
-    display: flex;
-    width: 60px;
-    height: 40px;
-  }
-}
-
 /* Hamburger Menu */
 .cv-hamburger-menu{
-  background-color: var(--cv-black-color);
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,5 +16,38 @@
 .cv-menu-item{
   font-family: var(--cv-primary-font);
   font-size: 4em;
+}
+
+/* Cambios de color */
+.cv-hamburger-menu.original{
+  background-color: var(--cv-black-color);
+}
+.cv-hamburger-menu.changed{
+  background-color: var(--cv-white-color);
+}
+.cv-menu-item.original{
   color: var(--cv-white-color);
 }
+.cv-menu-item.changed{
+  color: var(--cv-black-color);
+}
+
+@media screen and (max-width: 800px){
+  .cv-hamburger-button{
+    display: flex;
+    width: 60px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 520px){
+  .cv-menu-item{
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 420px){
+  .cv-menu-item{
+    font-size: 2em;
+  }
+}
+
+

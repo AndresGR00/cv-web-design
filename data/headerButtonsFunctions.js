@@ -1,4 +1,4 @@
-import { isToggledButton, setIsToggled } from "../components/toggleButton/toggleButton";
+import { getIsToggled } from "../components/toggleButton/toggleButton";
 import data from "./cvInfo";
 import "./headerButtonsFunctions.css";
 
@@ -13,15 +13,15 @@ export const studiesFunction = () => {
   const titleContainer = document.createElement("div");
   titleContainer.className = "cv-title-container";
   const title = document.createElement("h2");
+  title.className = getIsToggled() ? "cv-title-section changed need-to-change " : "cv-title-section original need-to-change ";
   title.innerHTML = "Qualifications";
-  title.className = "cv-title-section change-color";
 
   const infoContainer = document.createElement("div");
   infoContainer.className = "cv-info-container";
 
   data.studies.forEach((study) => {
     const card = document.createElement("div");
-    card.className = "cv-study-card change-color";
+    card.className = getIsToggled() ? "cv-study-card changed need-to-change" : "cv-study-card original need-to-change";
 
     const name = document.createElement("p");
     name.className = "cv-study-name";
@@ -29,12 +29,12 @@ export const studiesFunction = () => {
     card.appendChild(name);
 
     const place = document.createElement("p");
-    place.className = "cv-study-place change-color";
+    place.className = getIsToggled() ? "cv-study-place changed need-to-change" : "cv-study-place original need-to-change";
     place.innerHTML = `${study.place}`;
     card.appendChild(place);
 
     const year = document.createElement("p");
-    year.className = "cv-study-year change-color";
+    year.className = getIsToggled() ? "cv-study-year changed need-to-change" : "cv-study-year original need-to-change";
     year.innerHTML = `${study.years}`;
     card.appendChild(year);
 
@@ -45,9 +45,6 @@ export const studiesFunction = () => {
   sectionContainerDiv.appendChild(titleContainer);
   sectionContainerDiv.appendChild(infoContainer);
   main.appendChild(sectionContainerDiv);
-
-  setIsToggled(!false);
-    isToggledButton();
 };
 
 export const experienceFunction = () => {
@@ -61,15 +58,15 @@ export const experienceFunction = () => {
   const titleContainer = document.createElement("div");
   titleContainer.className = "cv-title-container";
   const title = document.createElement("h2");
+  title.className = getIsToggled() ? "cv-title-section changed need-to-change " : "cv-title-section original need-to-change ";
   title.innerHTML = "Experience";
-  title.className = "cv-title-section change-color";
 
   const infoContainer = document.createElement("div");
   infoContainer.className = "cv-info-container";
 
   data.experiences.forEach((experience) => {
     const card = document.createElement("div");
-    card.className = "cv-study-card change-color";
+    card.className = getIsToggled() ? "cv-study-card changed need-to-change" : "cv-study-card original need-to-change";
 
     const name = document.createElement("p");
     name.className = "cv-study-name";
@@ -77,12 +74,12 @@ export const experienceFunction = () => {
     card.appendChild(name);
 
     const place = document.createElement("p");
-    place.className = "cv-study-place change-color";
+    place.className = getIsToggled() ? "cv-study-place changed need-to-change" : "cv-study-place original need-to-change";
     place.innerHTML = `${experience.place}`;
     card.appendChild(place);
 
     const year = document.createElement("p");
-    year.className = "cv-study-year change-color";
+    year.className = getIsToggled() ? "cv-study-year changed need-to-change" : "cv-study-year original need-to-change";
     year.innerHTML = `${experience.years}`;
     card.appendChild(year);
 
@@ -93,9 +90,6 @@ export const experienceFunction = () => {
   sectionContainerDiv.appendChild(titleContainer);
   sectionContainerDiv.appendChild(infoContainer);
   main.appendChild(sectionContainerDiv);
-
-  setIsToggled(!false);
-    isToggledButton();
 };
 
 export const certificationsFunction = () => {
@@ -109,15 +103,15 @@ export const certificationsFunction = () => {
   const titleContainer = document.createElement("div");
   titleContainer.className = "cv-title-container";
   const title = document.createElement("h2");
+  title.className = getIsToggled() ? "cv-title-section changed need-to-change " : "cv-title-section original need-to-change ";
   title.innerHTML = "Certifications";
-  title.className = "cv-title-section change-color";
 
   const infoContainer = document.createElement("div");
   infoContainer.className = "cv-info-container";
 
   data.certifications.forEach((certificade) => {
     const card = document.createElement("div");
-    card.className = "cv-study-card change-color";
+    card.className = getIsToggled() ? "cv-study-card changed need-to-change" : "cv-study-card original need-to-change";
 
     const name = document.createElement("p");
     name.className = "cv-study-name";
@@ -125,12 +119,12 @@ export const certificationsFunction = () => {
     card.appendChild(name);
 
     const place = document.createElement("p");
-    place.className = "cv-study-place change-color";
+    place.className = getIsToggled() ? "cv-study-place changed need-to-change" : "cv-study-place original need-to-change";
     place.innerHTML = `${certificade.place}`;
     card.appendChild(place);
 
     const year = document.createElement("p");
-    year.className = "cv-study-year change-color";
+    year.className = getIsToggled() ? "cv-study-year changed need-to-change" : "cv-study-year original need-to-change";
     year.innerHTML = `${certificade.years}`;
     card.appendChild(year);
 
@@ -141,9 +135,6 @@ export const certificationsFunction = () => {
   sectionContainerDiv.appendChild(titleContainer);
   sectionContainerDiv.appendChild(infoContainer);
   main.appendChild(sectionContainerDiv);
-
-  setIsToggled(!false);
-    isToggledButton();
 };
 
 export const contactsFunction = () => {
@@ -157,15 +148,15 @@ export const contactsFunction = () => {
   const titleContainer = document.createElement("div");
   titleContainer.className = "cv-title-container";
   const title = document.createElement("h2");
+  title.className = getIsToggled() ? "cv-title-section changed need-to-change " : "cv-title-section original need-to-change ";
   title.innerHTML = "Contact Me";
-  title.className = "cv-title-section change-color";
 
   const infoContainer = document.createElement("div");
   infoContainer.className = "cv-info-container";
 
   data.contacts.forEach((contact) => {
     const card = document.createElement("div");
-    card.className = "cv-study-card change-color";
+    card.className = getIsToggled() ? "cv-study-card changed need-to-change" : "cv-study-card original need-to-change";
 
     const name = document.createElement("p");
     name.className = "cv-study-name";
@@ -173,14 +164,11 @@ export const contactsFunction = () => {
     card.appendChild(name);
 
     const place = document.createElement("p");
-    place.className = "cv-study-place change-color";
+    place.className = getIsToggled() ? "cv-study-place changed need-to-change" : "cv-study-place original need-to-change";
     place.innerHTML = `${contact.place}`;
     card.appendChild(place);
 
     infoContainer.appendChild(card);
-
-    setIsToggled(!false);
-    isToggledButton();
   });
 
   titleContainer.appendChild(title);
