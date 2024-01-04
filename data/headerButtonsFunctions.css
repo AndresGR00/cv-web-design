@@ -22,6 +22,28 @@
 .cv-title-section.changed{
     color: var(--cv-white-color);
 }
+.cv-filter-buttons{
+    display: flex;
+    gap: 15px;
+    max-width: 320px;
+}
+.cv-filter-button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.cv-filter-button.original{    
+    background-color: var(--cv-brown-color);
+    border: solid 2px var(--cv-red-color);
+    color: var(--cv-black-color);
+}
+.cv-filter-button.changed{
+    background-color: var(--cv-black-color);
+    border: solid 2px var(--cv-red-color);
+    color: var(--cv-white-color);
+
+}
 
 .cv-info-container{
     display: flex;
@@ -71,6 +93,7 @@
 .cv-study-place.changed, .cv-study-year.changed{
     color: var(--cv-white-color);
 }
+
 
 @media screen and (max-width: 1419px){
     .cv-study-card{

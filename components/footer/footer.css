@@ -1,0 +1,23 @@
+footer {
+  display: none;
+  font-family: var(--cv-secondary-font);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 0;
+}
+footer.original {
+  background-color: var(--cv-black-color);
+  color: var(--cv-white-color);
+}
+footer.changed {
+  background-color: var(--cv-white-color);
+  color: var(--cv-black-color);
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

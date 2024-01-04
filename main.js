@@ -1,3 +1,4 @@
+import { Footer } from './components/footer/footer';
 import { HamburgerButton } from './components/hamburgerButton/hamburgerButton';
 import { Header } from './components/header/header';
 import { HeaderButton } from './components/headerButtons/headerButtons';
@@ -36,3 +37,4 @@ const printMain = () => {
 
 printHeader()
 printMain()
+Footer();

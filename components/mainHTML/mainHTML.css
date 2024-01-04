@@ -1,7 +1,7 @@
 .cv-main{
     /* background-color: var(--cv-white-color); */
     width: calc(100% - 95px);
-    height: 100svh;
+    min-height: 100%;
     position: relative;
 }
 

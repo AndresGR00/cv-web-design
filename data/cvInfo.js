@@ -156,11 +156,13 @@ const data = {
     },
     {
       name: "LinkedIn",
-      place: "(link_profile_url)",
+      place: "See profile",
+      link: "https://www.linkedin.com/in/andres-gallardo00/",
     },
     {
       name: "GitHub",
-      place: "(link_profile_url)",
+      place: "See profile",
+      link: "https://github.com/AndresGR00",
     },
   ],
 };
